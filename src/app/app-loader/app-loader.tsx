@@ -8,7 +8,6 @@ const AppLoader: FC<AppLoaderProps> = () => {
     <div className={styles.bg}>
       <div className={styles.container}>
         <span className={styles.loader}></span>
-
         <span className={styles.rotated}></span>
       </div>
     </div>

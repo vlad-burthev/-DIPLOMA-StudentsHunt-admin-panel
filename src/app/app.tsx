@@ -6,10 +6,9 @@ import AppLoader from "./app-loader/app-loader";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Suspense fallback={<AppLoader />}> */}
-      {/* <AppRouter /> */}
-      <AppLoader />
-      {/* </Suspense> */}
+      <Suspense fallback={<AppLoader />}>
+        <AppRouter />
+      </Suspense>
     </BrowserRouter>
   );
 };
