@@ -1,0 +1,19 @@
+@use "/src/assets/styles/variables" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.submit-btn {
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  background-color: $primary-blue;
+  border-radius: 8px;
+}

@@ -1,0 +1,21 @@
+@use "/src/assets/styles/variables" as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid $primary-blue;
+}
