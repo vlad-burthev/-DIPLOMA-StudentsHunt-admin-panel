@@ -1,0 +1,16 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "navbar" "main" ".";
+  grid-template-columns: minmax(auto, 300px) 1fr minmax(auto, 300px);
+  grid-template-rows: 1fr;
+  gap: 34px;
+}
+
+.navbar {
+  grid-area: "navbar";
+}
+
+.main {
+  grid-area: "main";
+}

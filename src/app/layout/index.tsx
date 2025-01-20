@@ -1,16 +1,18 @@
 import type { FC } from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from "./navbar/navbar";
+import Main from "./main/main";
+import styles from "./styles.module.scss";
 
 interface LayoutProps {}
 
 const Layout: FC<LayoutProps> = () => {
   return (
-    <div>
-      <div>header</div>
-      <div>nav-menu</div>
-      <div>
+    <div className={styles.wrapper}>
+      <Navbar />
+      <Main>
         <Outlet />
-      </div>
+      </Main>
     </div>
   );
 };

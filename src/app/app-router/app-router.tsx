@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Auth from "../../pages/auth/auth";
-import Layout from "../layout/layout";
+import Layout from "../layout";
 
 interface AppRouterProps {}
 
