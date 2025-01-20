@@ -1,3 +1,5 @@
+@use "/src/assets/styles/variables" as *;
+
 .wrapper {
   height: 100vh;
   display: grid;
@@ -9,8 +11,40 @@
 
 .navbar {
   grid-area: "navbar";
+
+  &-container {
+    height: 100vh;
+    background-color: $bg-gray;
+    padding: 24px;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+
+    &__link {
+      font-size: 2rem;
+      color: $white;
+      border-bottom: 2px solid $primary-blue;
+    }
+  }
+
+  .navbar-list {
+    list-style: none;
+
+    &__item {
+      &:hover > .navbar-list__link {
+        color: $white;
+      }
+    }
+
+    &__link {
+      display: block;
+      color: $gray;
+    }
+  }
 }
 
 .main {
+  padding-top: 30px;
   grid-area: "main";
 }
